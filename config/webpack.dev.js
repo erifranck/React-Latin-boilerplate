@@ -1,4 +1,5 @@
 var path = require("path");
+var DashboardPlugin = require('webpack-dashboard/plugin');
 
 module.exports = {
   devtool: "eval",
@@ -22,5 +23,8 @@ module.exports = {
         }]
       },
     ]
-  }
+  },
+  plugins: [
+    new DashboardPlugin({port: 3001})
+  ]
 };

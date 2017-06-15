@@ -1,10 +1,10 @@
 import React from "react";
 import ReactDOM from "react-dom";
-import Routes from "./src/routes.js";
+import Routes from "./routes.js";
 import {Router, browserHistory} from "react-router";
 import {Provider} from "react-redux";
-import createStore from "./src/redux/create";
-import ApiClient from "./src/helpers/apiClient";
+import createStore from "./redux/create";
+import ApiClient from "./helpers/apiClient";
 
 const client = new ApiClient();
 const SET_NODE = document.getElementById("app");
